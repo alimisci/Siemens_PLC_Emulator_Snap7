@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- The Snap7 native DLL is platform-specific (32/64-bit). You'll need to copy the
+         snap7.dll matching your build platform (x86 or x64) into the output folder. -->
+    <Platforms>x64;x86</Platforms>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup><!-- Place snap7.dll (win32/win64) in the project root and copy it to the output
+         directory like this: -->
+    <!--
+    <None Include="snap7.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    -->
+  
+    <PackageReference Include="Snap7Server.Net" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>
