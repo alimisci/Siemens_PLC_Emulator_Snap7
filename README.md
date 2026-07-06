@@ -1,4 +1,4 @@
-# Siemen_PLC_Emulator_Snap7# S7 PLC Emulator (Snap7 S7Server + WinForms)
+# Siemens_PLC_Emulator_Snap7# S7 PLC Emulator (Snap7 S7Server + WinForms)
 
 ## Contents
 - `S7Types.cs` — Data types (Bool, Byte, Word, Int, DWord, DInt, Real, String) and DB/field definitions, automatic offset calculation (following Siemens word-alignment convention)
